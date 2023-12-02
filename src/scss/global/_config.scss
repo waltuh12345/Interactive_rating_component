@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+$ff: "Montserrat", sans-serif;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+$heading: clamp(1.25rem, 2.5rem + -1.6667vw, 1.875rem);
+$sub-heading: clamp(1.125rem, 2rem + -1.1667vw, 1.5625rem);
+
+$clr-primary: #2ea1da;
+$clr-neutral: #f1d39d;
+$clr-bg: #121212;
+$clr-text: #ffffff;

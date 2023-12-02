@@ -1,0 +1,75 @@
+@use "./config" as *;
+
+.container {
+  width: min(86%, 320px);
+}
+
+.primary-btn {
+  & {
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+
+  &:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+}
+
+.container.thank-you {
+  text-align: center;
+
+  img {
+    width: 50%;
+    margin-inline: auto;
+  }
+
+  img {
+    margin-inline: auto;
+  }
+
+  p {
+    margin: 0.5rem 0.2rem 0 0;
+  }
+
+  .status {
+    margin: 1.5rem 0 0.6rem 0;
+    position: relative;
+    padding: 0.2rem;
+    border-radius: 6px;
+    max-width: 250px;
+    margin-inline: auto;
+
+    &::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background-color: $clr-bg;
+      z-index: -2;
+      border-radius: 6px;
+    }
+
+    &::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background-color: $clr-text;
+      opacity: 0.1;
+      z-index: -1;
+      border-radius: 6px;
+    }
+  }
+}
